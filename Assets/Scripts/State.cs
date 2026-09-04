@@ -41,8 +41,6 @@ public abstract class State
 
     public void ReadInput()
     {
-     //   verticalInput = Input.GetAxis("Vertical");
-       // horizontalInput = Input.GetAxis("Horizontal");
     }
 
 
