@@ -40,9 +40,10 @@ public class JumpState : State
             sm.ChangeState(sm.runState);
         }
 
-        UIscript.ui.DrawText("*** This is the jumping state ***");
-        UIscript.ui.DrawText("Press E to change to idle");
-        UIscript.ui.DrawText("Press left/right arrows to change to move");
+        UIscript.ui.DrawText("*** This is the jumping state ***\n");
+        UIscript.ui.DrawText("Left/Right arrows = Move State");
+        UIscript.ui.DrawText("E = Idle State");
+
 
     }
 

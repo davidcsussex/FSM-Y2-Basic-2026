@@ -54,10 +54,12 @@ public class RunState : State
         player.rb.linearVelocity = player.moveAction.ReadValue<Vector2>() * speed;
 
 
-        UIscript.ui.DrawText("*** This is the running state ***");
-        UIscript.ui.DrawText("Press E to change to idle");
-        UIscript.ui.DrawText("Press space to change to jump");
-        UIscript.ui.DrawText("Press left/right arrows to change to move");
+        UIscript.ui.DrawText("*** This is the running state ***\n");
+        UIscript.ui.DrawText("Left/Right arrows = Move Sprite");
+        UIscript.ui.DrawText("E = Idle State");
+        UIscript.ui.DrawText("Space = Jump state");
+
+
 
     }
 

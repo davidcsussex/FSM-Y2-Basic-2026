@@ -49,10 +49,10 @@ public class IdleState : State
             player.StartCoroutine( IdleCo() );
         }
 
-        UIscript.ui.DrawText("*** This is the idle state ***");
-        UIscript.ui.DrawText("Press space to change to jump");
-        UIscript.ui.DrawText("Press left/right arrows to change to move");
-        UIscript.ui.DrawText("Press c to start the coroutine");
+        UIscript.ui.DrawText("*** This is the idle state ***\n");
+        UIscript.ui.DrawText("Space = Jump State");
+        UIscript.ui.DrawText("Left/Right arrows = Move State");
+        UIscript.ui.DrawText("C = Start the coroutine");
 
 
     }

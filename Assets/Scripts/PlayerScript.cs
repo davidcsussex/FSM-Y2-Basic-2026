@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
 {
     public SpriteRenderer sr;
     public Rigidbody2D rb;
-    public StateMachine sm;
+    StateMachine sm;
 
     //define the actions
     public InputAction moveAction;
@@ -21,10 +21,9 @@ public class PlayerScript : MonoBehaviour
 
     private void Start()
     {
-        sm = new StateMachine(this);
+        sm = new StateMachine(this); //"this" means - pass a reference of this script (player script) to the statemachine
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
-
 
         sm.Init(sm.idleState); //this will be the first state to run 
 
@@ -42,7 +41,7 @@ public class PlayerScript : MonoBehaviour
         //do not put any of your own methods here - they go in the individual state files
         sm.Update();
 
-        UIscript.ui.DrawText("Current/last state: " + sm.currentState + "  " + sm.lastState);
+        UIscript.ui.DrawText("Current state= " + sm.currentState + "  Last state= " + sm.lastState);
 
     }
 
